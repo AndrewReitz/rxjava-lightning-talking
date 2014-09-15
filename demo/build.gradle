@@ -1,0 +1,21 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.12.+'
+    classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.+'
+  }
+}
+
+allprojects {
+  version = '1.0'
+  group = 'com.andrewreitz.test'
+
+  repositories {
+    jcenter()
+    maven {
+      url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+  }
+}

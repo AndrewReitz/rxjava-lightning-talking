@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = 'com.andrewreitz.test.Main'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy:groovy-all:2.3.2'
+  compile 'com.netflix.rxjava:rxjava-groovy:0.20.4'
+  compile 'com.squareup.retrofit:retrofit:1.6.1'
+}

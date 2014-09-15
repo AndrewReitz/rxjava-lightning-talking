@@ -1,0 +1,16 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+mainClassName = "com.andrewreitz.test.Main"
+
+repositories {
+  mavenCentral()
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+  compile 'io.reactivex:rxjava:1.0.0-rc.3'
+  compile 'com.squareup.retrofit:retrofit:1.6.1'
+}
